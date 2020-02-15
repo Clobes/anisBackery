@@ -1,0 +1,5 @@
+@media screen and (max-width: 64em){
+        .img {
+           display: none;
+        }
+}

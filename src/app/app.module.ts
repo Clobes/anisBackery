@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 //routes
 import { AppRoutingModule } from './app-routing.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
 //components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -27,7 +29,8 @@ import { ItemComponent } from './pages/item/item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
