@@ -14,6 +14,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { LoadingComponent } from './pages/loading/loading.component';
+import { SearchComponent } from './pages/search/search.component';
+import { from } from 'rxjs';
 
 
 
@@ -25,7 +28,9 @@ import { ItemComponent } from './pages/item/item.component';
     FooterComponent,
     PortfolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    LoadingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

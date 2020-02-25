@@ -1,4 +1,22 @@
 
+/*
+  SVG animation
+*/
+/*
+svg path,
+svg rect{
+  fill: #000000;
+}
+
+.loading,h3{
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #000000;
+  
+}
+
+/* Animation */
 .animated {
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
@@ -41,4 +59,32 @@
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
   }
-  
+  /* EMAIL */
+  .email{
+    color: #ff6666;
+  }
+  body{
+    color: #ff6666;
+  }
+  a:hover{
+        color: #ffcccced;
+}
+
+
+/* SEARCH */
+#urku-search{
+  color:#ff6666;
+}
+
+#svg-search{
+  color: #ff6666;
+}
+
+::-webkit-input-placeholder { color: #ffcccced; } 
+
+:-moz-placeholder { /* Firefox 18- */ color: #ffcccced; } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: #ffcccced; } 
+
+:-ms-input-placeholder { color: #ffcccced; }
+

@@ -8,19 +8,37 @@ import { pageInfo } from '../interfaces/page-info.interface';
 export class PageInfoService {
 
   info : pageInfo = {};
-  loaded = false;
+  team: any[] = [];
+  loaded = true;
 
   constructor( private http : HttpClient ) { 
 
+    this.loadTeam();
+    this.loadInfo();
+
+  }
+
+  private loadInfo(){
     this.http.get('assets/data/data-page.json')
-        .subscribe( (resp: pageInfo)=>{
 
-          this.loaded = true;
-          this.info = resp; 
-          console.log(resp.instagram);
+      .subscribe( (resp: pageInfo)=>{
+      this.info = resp; 
+      this.loaded = false;
+      //console.log(resp.instagram);
 
-        })
+    })
 
+  }
+
+  private loadTeam(){
+
+    this.http.get('https://anisbakery-51672.firebaseio.com/team.json')
+      .subscribe((resp: any)=>{
+
+        this.team = resp;       
+        this.loaded = false;
+
+      })
   }
 
 }
