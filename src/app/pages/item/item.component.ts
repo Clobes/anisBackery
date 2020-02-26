@@ -21,7 +21,7 @@ export class ItemComponent implements OnInit {
               .subscribe((product: ProductDescription) =>{
                 this.product = product;
                 this.loaded = false;
-                  console.log(product);
+                  console.log(product.url);
               });
         } );
 
